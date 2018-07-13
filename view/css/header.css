@@ -1,0 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css?family=Squada+One');
+
+#menu-bar{
+  display: none;
+}
+#menu{
+  float: left;
+  font-size: 28px;
+  margin:6px;
+  padding-right: 8px;
+  cursor:pointer;
+}
+.menu{
+  position: absolute;
+  top:50px;
+  left:0px;
+  width: 30em;
+  height: 100vh;
+  background: rgba(167, 166, 166, 0.9);
+  transition: all 0.5s;
+  transform: translateX(-100%);
+}
+.menu a{
+  display: block;
+  color:#fff;
+  height:50px;
+  text-decoration: none;
+  padding: 15px;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+.menu a:hover{
+  background: rgba(255, 255, 255, 0.3);
+  color: #DC2D2D;
+
+}
+#menu-bar:checked ~ .menu{
+  transform: translateX(0%);
+}
+
+button{
+    padding: 10px 20px;
+    background: none;
+    border-style: none;
+    border: 1px solid white;
+    margin-top: 20px;
+    transition: background 300ms;
+    cursor: pointer;
+    margin-left: 10px;
+}
